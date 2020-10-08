@@ -1,16 +1,18 @@
-# onboarding-react
+# Rumin React Onboarding
+Simple React component for onboarding new users in a series of steps. This is taken from the code in the [Rumin](https://getrumin.com) product.
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+![Onboarding demo GIF](https://storage.googleapis.com/rumin-gcs-bucket/onboarding.gif)
 
-Describe onboarding-react here.
+## Usage
+To use only onboarding content, you can run:
+`npm install onboarding-react`
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+Pass the following parameters as props:
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+- `closeOnboardingModal` callback function when the modal dialog is to be closed. Add logic here to control the display state of the modal dialog.
+- `stepContent` an array of React components, each containing the content of the onboarding step
+- `numStep` number of steps in total
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+To see a working example, see `/demo/src/index.js`
+
+This project uses [react-modal](https://github.com/reactjs/react-modal)  for handling the modal part. But you can swap it out with other libraries.

@@ -1,0 +1,38 @@
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-center {
+	align-items: center;
+}
+
+.flex .right-side {
+	margin-left: auto;
+}
+
+.btn-primary {
+	border-radius: 30px;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin-left: auto;
+    background-color: #0f8bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: #0e80ea;
+}
+
+.mr-2 {
+	margin-right: 0.5em;
+}
+
+.gray-text {
+	color: #777;
+}
